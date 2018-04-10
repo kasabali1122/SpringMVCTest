@@ -10,18 +10,18 @@ public class HelloWorldController {
 
 	@RequestMapping("/hello")
 	public ModelAndView helloWorld(){
-		String message="Hello Spring MVC how r u";
-		return new ModelAndView("hellopage","message",message);
+		String message="Hello ,how Are U";
+		return new ModelAndView("test","message",message);
 	}
-	@RequestMapping("/kemal")
+	@RequestMapping("/hello2")
 	public ModelAndView helloWorld1(){
-		String message="Hello kemal";
-		return new ModelAndView("hellopage","message",message);
+		String message="Hello User";
+		return new ModelAndView("test","message",message);
 	}
-	@RequestMapping("/getName")
+	@RequestMapping("/hello3")
 	public ModelAndView helloWorld2(){
-		String message="KEMAL";
+		String message="HELLOOOOOOOOOOOOOO";
 		
-		return new ModelAndView("index","message",message);
+		return new ModelAndView("test","message",message);
 	}
 }
